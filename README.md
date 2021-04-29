@@ -63,14 +63,12 @@ Imagery is very important for, and is used throughout, the website so that it's 
 ## Wireframes
 
   - Mobile view:
-
  ![](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
 
- 
  - Tablet view:
  ![](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
 
- -Desctop view:
+ - Desctop view:
  ![](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
 
 # Features
@@ -131,7 +129,7 @@ Imagery is very important for, and is used throughout, the website so that it's 
  - [The Old Farmer's Almanac](https://www.almanac.com/)
  - [The Lakeland Horticultural Society](http://holehirdgardens.org.uk)
  - [ The BBC Gardeners' World Magazine ](https://www.gardenersworld.com)
- - [The Sunday Gardener]("https://www.sundaygardener.co.uk)
+ - [The Sunday Gardener](https://www.sundaygardener.co.uk)
 
 ## Images
 
