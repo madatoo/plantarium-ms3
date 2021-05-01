@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is a website for garden beginers about plants for small gardens.">
+    <link rel="shortcut icon" href="static/img/logo_fav.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
@@ -12,6 +14,30 @@
     <title>Plantarium</title>
 </head>
 <body>
+
+    <header>
+        <!--top navbar-->  
+        <nav class="nav-extended  teal darken-4 white-text">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo "><img src="/static/img/logo_48.png"  class="logo"alt ="Plantarium logo">Plantarium</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="plants.html">Plants by place type</a></li>
+                <li><a href="add_plant.html">Add Plant </a></li>
+            </ul>
+            </div>
+        </nav>
+        <!--side navbar-->
+        <ul class="sidenav  teal darken-4 center " id="mobile-demo">
+            <li><img src="/static/img/logo_48.png" class="logo sidebar-img" alt ="Plantarium logo"></li>
+            <li><a href="#"class="white-text" >Home</a></li>
+            <li><a href="plants.html" class="white-text">Plants by place type</a></li>
+            <li><a href="add_plant.html" class="white-text">Add Plant</a></li>
+            
+        </ul>
+          
+    </header>
     {% block content %}
 
     {% endblock %}
@@ -21,5 +47,17 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block script %}
     {% endblock %}
+
+    
+    <footer class="page-footer teal darken-4 " >
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h6 class="white-text text-center">@ MRS 2021 all rights reserved</h6>
+                    
+                </div>
+            </div>
+        </div>           
+    </footer>
 </body>
 </html>
