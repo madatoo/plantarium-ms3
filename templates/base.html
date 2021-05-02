@@ -19,7 +19,7 @@
         <!--top navbar-->  
         <nav class="nav-extended  teal darken-4 white-text sticky-top">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo "><img src="/static/img/logo_48.png"  class="logo"alt ="Plantarium logo">Plantarium</a>
+                <a href="#" class="brand-logo"><img src="/static/img/logo_48.png"  class="logo"alt ="Plantarium logo"><span class="mobile-view">Plantarium</span></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
@@ -30,8 +30,7 @@
         </nav>
         <!--side navbar-->
         <ul class="sidenav  teal darken-4 center " id="mobile-demo">
-            <li><img src="/static/img/logo_48.png" class="logo sidebar-img" alt ="Plantarium logo"></li>
-            <li><a href="#"class="white-text" >Home</a></li>
+            <li><a href="#"class="white-text side-nav-style" >Home</a></li>
             <li><a href="plants.html" class="white-text">Plants by place type</a></li>
             <li><a href="add_plant.html" class="white-text">Add Plant</a></li>
             
@@ -48,17 +47,13 @@
     {% block script %}
     {% endblock %}
 
-    
-    <footer class="page-footer teal darken-4" >
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <div class="footer-copyright teal darken-4">
-                         <h6>© MRS 2021 all rights reserved </h6>   
-                    </div>   
-                </div>
+    <section class="last-section"></section>
+    <footer class="teal darken-4">
+        <div>
+            <div class= "footer-copyright row center-align" >
+                <h6>© MRS 2021 all rights reserved </h6>            
             </div>
-        </div>           
+        </div>        
     </footer>
 </body>
 </html>
