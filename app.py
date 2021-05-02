@@ -15,6 +15,13 @@ app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
+
+
+@app.route("/")
+def index():
+    return render_template("index.html", page_title="Home") 
+
+
 # check the app  is properly configured
 @app.route("/")
 @app.route("/get_plants")
