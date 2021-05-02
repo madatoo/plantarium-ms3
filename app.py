@@ -19,15 +19,14 @@ mongo = PyMongo(app)
 
 @app.route("/")
 def index():
-    return render_template("index.html", page_title="Home") 
+    return render_template("index.html", page_title="Home")
 
 
-# check the app  is properly configured
 @app.route("/")
-@app.route("/get_plants")
-def get_plants():
-    plants = list(mongo.db.plants.find())
-    return render_template("plants.html", plants=plants)
+@app.route("/all_plants")
+def all_plants():
+    all_plants = list(mongo.db.plants.find())
+    return render_template("all_plants.html", all_plants=all_plants)
 
 
 if __name__ == "__main__":

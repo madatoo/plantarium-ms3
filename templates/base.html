@@ -19,20 +19,20 @@
         <!--top navbar-->  
         <nav class="nav-extended  teal darken-4 white-text sticky-top">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="/static/img/logo_48.png"  class="logo"alt ="Plantarium logo"><span class="mobile-view">Plantarium</span></a>
+                <a href="{{ url_for('index') }}" class="brand-logo"><img src="/static/img/logo_48.png"  class="logo"alt ="Plantarium logo"><span class="mobile-view">Plantarium</span></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
-                <li><a href="plants.html">Plants by place type</a></li>
-                <li><a href="add_plant.html">Add Plant </a></li>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('all_plants') }}">All Plants</a></li>
+                <li><a href="add_plant.html">Add Your Plant </a></li>
             </ul>
             </div>
         </nav>
         <!--side navbar-->
         <ul class="sidenav  teal darken-4 center " id="mobile-demo">
-            <li><a href="#"class="white-text side-nav-style" >Home</a></li>
-            <li><a href="plants.html" class="white-text">Plants by place type</a></li>
-            <li><a href="add_plant.html" class="white-text">Add Plant</a></li>
+            <li><a href="{{ url_for('index') }}"class="white-text side-nav-style" >Home</a></li>
+            <li><a href="{{ url_for('all_plants') }}" class="white-text"> All Plants</a></li>
+            <li><a href="add_plant.html" class="white-text">Add Your Plant</a></li>
             
         </ul>
           
