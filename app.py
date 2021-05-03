@@ -23,10 +23,10 @@ def index():
 
 
 @app.route("/")
-@app.route("/add_plants")
-def add_plants():
-    add_plants = mongo.db.plants.find()
-    return render_template("add_plants.html", add_plants=add_plants)
+@app.route("/add_plant")
+def add_plant():
+    add_plant = mongo.db.plants.find()
+    return render_template("add_plant.html", add_plant=add_plant)
 
 
 @app.route("/")
