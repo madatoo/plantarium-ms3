@@ -25,8 +25,8 @@ def index():
 @app.route("/")
 @app.route("/add_plant")
 def add_plant():
-    add_plant = mongo.db.plants.find()
-    return render_template("add_plant.html", add_plant=add_plant)
+    categories = mongo.db.plants.find().sort("category_name", 1)
+    return render_template("add_plant.html", categories=categories)
 
 
 @app.route("/")

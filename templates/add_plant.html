@@ -6,21 +6,42 @@
     <div class="row s12 m7 text-center custom-all-plants-header">
         <h5>Add Your Plant</h5>
     </div>
-    <!--add plant form-->        
+    <!--add plant form-->
     <div class="row">
-        <form class="col s12">
+        <form class="col s12" method="POST" action="">
+            <!--plant_category-->
+            <div class="row">
+                <select id="plant_category" class="validate" name="plant_category" required>
+                    <option value="" disabled selected>Choose Plant Category</option>
+                    {% for category in categories %}
+                        <option value="{{ category.plant_category }}">
+                            {{ category.plant_category }}</option>
+                    {% endfor %}
+                </select>
+                <label for="plant_category">Plant Category</label>
+            </div>
+            <!--plant_img-->
+            <!--plant_name-->
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="add_plant_input" type="text" data-length="100">
-                    <label for="input_text">Plant Name</label>
+                    <input class="validate" id="plant_name" name="plant_name" type="text"
+                    minlength="3" maxlength="60" required>
+                    <label for="plant_name">Plant Name</label>
+                    <span class="helper-text" data-error="Please enter correct name." data-success="Correct Name.">Enter plant name between 3 and 60 characters</span>
                 </div>
             </div>
+            <!--plant_description-->
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="textarea2" class="materialize-textarea" data-length="2500"></textarea>
-                    <label for="textarea2">Plant Description</label>
+                    <textarea id="plant_description" class="materialize-textarea" name="plant_description" data-length="2500" required ></textarea>
+                    <label for="plant_description">Plant Description</label>
+                    <span class="helper-text" data-error="Please enter correct name." data-success="Correct Name.">Enter plant description.</span>
                 </div>
             </div>
+            <!--plant_place sun/shade etc.-->
+            <!--plant_tips-->
+            <!--plant_more_info-->
+            <!--plant_notes-->
         </form>
     </div>
 </div>
