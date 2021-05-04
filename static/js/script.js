@@ -8,9 +8,11 @@ $(document).ready(function(){
     }, 1800);
     //add plant form
     $('select').formSelect();
+    $('.dropdown-trigger').dropdown(); 
     $('input#plant_name, textarea#plant_description,textarea#plant_tips, texarea#plant_more_info, texarea#plant_notes').characterCounter();
     $('#plant_description').val('');
-      M.textareaAutoResize($('#plant_description'));   
+      M.textareaAutoResize($('#plant_description'));
+      
 
 
 

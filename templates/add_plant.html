@@ -9,16 +9,16 @@
     <!--add plant form-->
     <div class="row">
         <form class="col s12" method="POST" action="">
-            <!--plant_category-->
+            <!--category_name-->
             <div class="row">
-                <select id="plant_category" class="validate" name="plant_category" required>
+                <select id="category_name" class="validate" name="category_name" required>
                     <option value="" disabled selected>Choose Plant Category</option>
                     {% for category in categories %}
-                        <option value="{{ category.plant_category }}">
-                            {{ category.plant_category }}</option>
+                        <option value="{{ category.category_name }}">
+                            {{ category.category_name }}</option>
                     {% endfor %}
                 </select>
-                <label for="plant_category">Plant Category</label>
+                <label for="category_name">Plant Category</label>
             </div>
             <!--plant_img-->
             <!--plant_name-->
@@ -40,14 +40,23 @@
             </div>
             <!--plant_place sun/shade etc.-->
             <div class="row">
-                <select id="plant_place" class="validate" name="plant_place" required>
-                    <option value="" disabled selected>Choose Plant Place</option>
-                    {% for category in categories %}
-                        <option value="{{ category.plant_place }}">
-                            {{ category.plant_place }}</option>
+                <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 ' href='#' data-target="plant_place" name="plant_place" >Plant Place</a>
+                    {% for place in places %}
+                        <ul id="plant_place" class='dropdown-content'>
+                            <li>
+                                <a href="#!"><i class="fas fa-sun"></i>Sun</a>
+                            </li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li>
+                                <a href="#!"><i class="fas fa-cloud-sun"></i>Partial-Shade</a>
+                            <li class="divider" tabindex="-1"></li>
+                            </li>
+                            <li> 
+                                <a href="#!"><i class="fas fa-cloud"></i>Shade</a>
+                            </li>
+                        <ul>
                     {% endfor %}
-                </select>
-                <label for="plant_place">Plant Category</label>
+                               
             </div>
             <!--plant_tips-->
             <div class="row">
