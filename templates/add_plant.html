@@ -39,8 +39,32 @@
                 </div>
             </div>
             <!--plant_place sun/shade etc.-->
+            <div class="row">
+                <select id="plant_place" class="validate" name="plant_place" required>
+                    <option value="" disabled selected>Choose Plant Place</option>
+                    {% for category in categories %}
+                        <option value="{{ category.plant_place }}">
+                            {{ category.plant_place }}</option>
+                    {% endfor %}
+                </select>
+                <label for="plant_place">Plant Category</label>
+            </div>
             <!--plant_tips-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="plant_tips" class="materialize-textarea" name="plant_tips" data-length="2500" required ></textarea>
+                    <label for="plant_tips">Plant Tips</label>
+                    <span class="helper-text" data-error="Please enter your tips." data-success="Correct Name.">Here you can add some tips for tis plant.</span>
+                </div>
+            </div>
             <!--plant_more_info-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="plant_more_info" class="materialize-textarea" name="plant_more_info" data-length="1000"></textarea>
+                    <label for="plant_more_info">More Info About Plant </label>
+                    <span class="helper-text" data-error="Please enter your tips." data-success="Correct Name.">This space is for additional links. Remember to hit enter after each link:)</span>
+                </div>
+            </div>
             <!--plant_notes-->
             <div class="row center">
                 <button class="btn waves-effect waves-light teal darken-4 " type="submit" >Submit <i class="fas fa-paper-plane"></i>
