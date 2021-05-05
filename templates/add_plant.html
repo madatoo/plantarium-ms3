@@ -30,33 +30,47 @@
                     <span class="helper-text" data-error="Please enter correct name." data-success="Correct Name.">Enter plant name between 3 and 60 characters</span>
                 </div>
             </div>
+            <!--plant_on_wish_list-->
+            <div class="col s12 input-field">
+                <div class="switch">
+                    <label>
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Do you want to add plant to wish list?
+                    </label> 
+                </div>
+            </div>
             <!--plant_description-->
             <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="plant_description" class="materialize-textarea" name="plant_description" data-length="2500" required ></textarea>
+                    <textarea id="plant_description" class="materialize-textarea" name="plant_description"  minlength="3" data-length="2500" required ></textarea>
                     <label for="plant_description">Plant Description</label>
-                    <span class="helper-text" data-error="Please enter correct name." data-success="Correct Name.">Enter plant description.</span>
+                    <span class="helper-text" data-error="Please enter plant description." data-success="Correct Name.">Enter plant description.</span>
                 </div>
             </div>
             <!--plant_place sun/shade etc.-->
             <div class="row">
-                <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 ' href='#' data-target="plant_place" name="plant_place" >Plant Place</a>
-                    {% for place in places %}
-                        <ul id="plant_place" class='dropdown-content'>
-                            <li>
-                                <a href="#!"><i class="fas fa-sun"></i>Sun</a>
-                            </li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li>
-                                <a href="#!"><i class="fas fa-cloud-sun"></i>Partial-Shade</a>
-                            <li class="divider" tabindex="-1"></li>
-                            </li>
-                            <li> 
-                                <a href="#!"><i class="fas fa-cloud"></i>Shade</a>
-                            </li>
-                        <ul>
-                    {% endfor %}
-                               
+                <div class="row row s12 m7 text-center">
+                    <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 ' href='#' data-target="plant_place" name="plant_place">Plant Place</a>
+                        {% for place in places %}
+                            <ul id="plant_place" class='dropdown-content'>
+                                <li><a href="#!"><i class="far fa-sun"></i>Sun</a></li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li>
+                                    <a href="#!"><i class="fas fa-sun"></i>Partial-Sun</a>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li>
+                                    <a href="#!"><i class="fas fa-cloud-sun"></i>Partial-Shade</a>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li> 
+                                    <a href="#!"><i class="fas fa-cloud"></i>Shade</a>
+                                </li>
+                            <ul>
+                        {% endfor %}                  
+                </div>
+            
             </div>
             <!--plant_tips-->
             <div class="row">
@@ -75,10 +89,13 @@
                 </div>
             </div>
             <!--plant_notes-->
+            <!--submit btn-->
             <div class="row center">
                 <button class="btn waves-effect waves-light teal darken-4 " type="submit" >Submit <i class="fas fa-paper-plane"></i>
                 </button>
             </div>
+            
+
         </form>
     </div>
 </div>
