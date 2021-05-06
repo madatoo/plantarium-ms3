@@ -6,11 +6,11 @@ $(document).ready(function(){
       setInterval(function() {
       $('#carousel-auto').carousel('next');
     }, 1800);
-    //search box
+    //search box in add plant page
     $('.collapsible').collapsible();
     //add plant form
     $('select').formSelect();
-    $('.dropdown-trigger').dropdown(); 
+    $('.dropdown-trigger').dropdown({hover:true}); 
     $('input#plant_name, textarea#plant_description,textarea#plant_tips, texarea#plant_more_info, texarea#plant_notes').characterCounter();
     $('#plant_description').val('');
       M.textareaAutoResize($('#plant_description'));
