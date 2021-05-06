@@ -35,7 +35,7 @@ This is route for add plant form
 @app.route("/add_plant", methods=["GET", "POST"])
 def add_plant():
     if request.method == "POST":
-        wish_list = "yes" if request.form.get(
+        wish_list = "on" if request.form.get(
             "plant_on_wish_list") else "no"
         plant = {
             "category_name": request.form.get("category_name"),

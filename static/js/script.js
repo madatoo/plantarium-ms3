@@ -6,6 +6,8 @@ $(document).ready(function(){
       setInterval(function() {
       $('#carousel-auto').carousel('next');
     }, 1800);
+    //search box
+    $('.collapsible').collapsible();
     //add plant form
     $('select').formSelect();
     $('.dropdown-trigger').dropdown(); 
