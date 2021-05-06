@@ -8,13 +8,18 @@
     </div>
 </div>
 <div class="container">
-    <ul class="collapsible">
-        <li>
-            <div class="collapsible-header"><i class="fas fa-search "></i>Search by plant place
-            </div>
-               
-        </li>
-    </ul>
+    <div class="row">
+        <form class="col s12" method="POST" action="">
+            <select id="plant_place" class="validate" name="plant_place" required>
+                <option value="" disabled selected>Choose from our four plant places.</option>
+                {% for place in places %}
+                    <option value="{{ place.plant_place }}">
+                        {{ place.plant_place }}</option>
+                {% endfor %}
+            </select>
+            <label for="plant_place"></label>
+        </form>
+    </div>
 </div>
 <div class="containeer">
     <div class="row">
