@@ -16,10 +16,19 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+"""
+add route for home page
+"""
+
 
 @app.route("/")
 def index():
     return render_template("index.html", page_title="Home")
+
+
+"""
+This is route for add plant form
+"""
 
 
 @app.route("/")
@@ -47,6 +56,11 @@ def add_plant():
     places = mongo.db.places.find().sort("plant_places", 1)
     return render_template(
         "add_plant.html", categories=categories, places=places)
+
+
+"""
+route for all plants serching page
+"""
 
 
 @app.route("/")
