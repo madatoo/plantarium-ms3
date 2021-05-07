@@ -27,7 +27,17 @@ def index():
 
 
 """
-This is route for add plant form
+Add img to database
+
+
+
+@app.route("/")
+@app.route("/add_img")
+
+
+
+
+This is route for add plant page with form
 """
 
 
