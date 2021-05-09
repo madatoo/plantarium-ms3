@@ -58,9 +58,9 @@
                 </div>
             </div>
             <!--plant_place sun/shade etc.-->
-            <div class="row">
+            <div class="row center">
                 <div class="row row s12 m7 text-center">
-                    <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 ' href='#' data-target="plant_place" name="plant_place">Plant Place</a>
+                    <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 plant-place-button' href='#' data-target="plant_place" name="plant_place">Plant Place</a>
                         {% for place in places %}
                             <ul id="plant_place" class='dropdown-content'>
                                 <li><a href="#!"><i class="far fa-sun"></i>Sun</a></li>
@@ -101,6 +101,7 @@
             <div class="row center">
                 <button class="btn waves-effect waves-light teal darken-4 " type="submit" >Submit <i class="fas fa-paper-plane"></i>
                 </button>
+                <a class="btn waves-effect waves-light space teal darken-4" href="{{ url_for('index') }}">Return <i class="fas fa-home"></i></a>
             </div>
             
 

@@ -103,6 +103,13 @@ h6{
 }
 /*----------------------------------add palant page*/
 
+.plant-place-button{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.space{
+    margin: 2em;
+}
 
 /*----------------------------------media queries*/
  @media screen and (max-width: 620px){
