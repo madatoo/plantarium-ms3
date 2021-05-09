@@ -31,6 +31,12 @@ main {
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
 }
+
+h1,
+h2{
+    font-size: 2.92rem;
+    color: #004d40;
+}
 /*------------------------------base*/
 
 /*------------sticky footer*/

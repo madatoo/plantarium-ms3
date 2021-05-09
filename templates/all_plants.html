@@ -9,7 +9,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('all_plants') }}">
             <select id="plant_place" class="validate" name="plant_place" required>
                 <option value="" disabled selected>Choose from our four plant places.</option>
                 {% for place in places %}
