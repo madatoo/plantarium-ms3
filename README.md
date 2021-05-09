@@ -62,11 +62,11 @@ Imagery is very important for this page, and is used throughout, the website so 
 
 ## Wireframes
 
-- ![Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
+- [Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
 
--  ![Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
+- [Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
 
-- ![Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
+- [Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
 
 # Features
 
@@ -126,6 +126,13 @@ In this project FAQ wasen't implemented yet, but some informations about page fu
 
 Here not everythin was done yet.  I didn't add 
 
+### Known bugs
+
+I wanted create an app which will allows users add some info about favourite plants to databese. Unfortunatly not everything is going just like I intendent. 
+
+First at all, my add plant form has a bug in filed choose category (it is a dropdown field with all categories which are  available in created database and saved in categories collection). Here Validation rule not working fine, the red color is not appered when the category is not selected. I tryied to solve it by adding the snippet of code from Tim Nelson materials which was showed in school project, but my skills wasent large, to fix it now. 
+
+
 ### Links
 
 This time links are only to other subpages. Social Media links wasent added, but in future will be implemented to create a fanpage on Facebook and Discord, where visitors will have an opportunity to share own expirences, meet together or create some online events as well. 
@@ -134,17 +141,19 @@ This time links are only to other subpages. Social Media links wasent added, but
 
 To check the app is responsive I used:
 
-- dev tools,
+- Dev Tools,
 - 
 
 ### Validators
  
 I walidated this app on :
 
-1. [HTML Validator]()
-2. [CSS Validator]()
-3. [JavaScript Validator]()
-4. [Python Validator]()
+1. [HTML Validator](https://validator.w3.org/)
+2. [CSS Validator](https://jigsaw.w3.org/css-validator/)
+3. [JavaScript Validator](https://jshint.com/)
+4. [Python Validator](http://pep8online.com/)
+5. [Autoprefixer](https://autoprefixer.github.io/)
+
 I also used:
 
 - Mozzilla and Google Chrom Dev Tools and
@@ -168,7 +177,7 @@ My first report showed me this results (that was during my design process)
 
 --------------------------------------------------------------------
 Criterion          |  Results 1   |   Results 2  |    Improved y/n
---------------------------------------------------------------------
+-------------------------------------------------------------------
 Performance        |     63
 -------------------------------------------------------------------- 
 Accessibility      |     73
