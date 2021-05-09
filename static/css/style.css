@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 /*----------------general rules*/
 
@@ -10,12 +17,19 @@ body{
     min-height: 100vh; 
 }
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 main {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 /*------------------------------base*/
 
@@ -69,7 +83,8 @@ h6{
 .place-image {
     height: 500px; 
     width: 500px; 
-    object-fit:cover;
+    -o-object-fit:cover; 
+       object-fit:cover;
 }
 
 /*----------------------------------all plants page*/
@@ -96,5 +111,3 @@ h6{
     }
 
 }
-
-

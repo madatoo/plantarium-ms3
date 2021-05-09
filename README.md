@@ -62,12 +62,11 @@ Imagery is very important for this page, and is used throughout, the website so 
 
 ## Wireframes
 
+- ![Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
 
-  - ![Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
+-  ![Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
 
- -  ![Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
-
- - ![Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
+- ![Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
 
 # Features
 
@@ -95,90 +94,159 @@ The most important thing in this project was design the application which meet w
 
 # Technologies Used
 
- - HTML5 - used for building the website
- - CSS3 - for styling elements
- - JavaScript.
- - Python
- - MongoDB
- - Flask
- - JQuery - to initialize Materialize CSS components.
- - Google Fonts -  used for fonts on website
- - Font Awesome - used for Icons.
- - Materialize CSS - Used for elements, components and styling of the page.
- - Balsamic - to creates of the Wireframes.
- - GitHub - Used for hosting the code, and version control.
- - Notion - for project management
+- HTML5 - used for building the website
+- CSS3 - for styling elements
+- JavaScript.
+- Python
+- MongoDB
+- Flask
+- JQuery - to initialize Materialize CSS components.
+- Google Fonts -  used for fonts on website
+- Font Awesome - used for Icons.
+- Materialize CSS - Used for elements, components and styling of the page.
+- Balsamic - to creates of the Wireframes.
+- GitHub - Used for hosting the code, and version control.
+- Notion - for project management
  
- # Testing
+# Testing
 
- ## User Stories testing
+## User Stories testing
 
- ### First Time Visitor Goals
+### First Time Visitor Goals
 
- In this project FAQ wasen't implemented yet, but some informations about page functionallity were implemented. 
-  - main purpose of the webpage is described on the Home page below the carusel,
-  - how to add plant - each field in Add Plant form is described or intuitive (such us  switcher add to list wish field or plant place - you need only click on the correct place which have added icon, to help you decide about the correct place).
-  - how to browse plants - that is posibble on All Plants page. Here visitors can browse plants afrter choosing some categoty. 
+In this project FAQ wasen't implemented yet, but some informations about page functionallity were implemented. 
 
-  - edit and delete  - this features are available on page All Plants Category, which is displayed after choosing plant about which visitors want to read more. Here are also available links to other sources implemented by users. (I am not sure they will be working properly now)
+- main purpose of the webpage is described on the Home page below the carusel,
+- how to add plant - each field in Add Plant form is described or intuitive (such us  switcher add to list wish field or plant place - you need only click on the correct place which have added icon, to help you decide about the correct place).
+- how to browse plants - that is posibble on All Plants page. Here visitors can browse plants afrter choosing some categoty. 
 
- ### Returning Visitors
+- edit and delete  - this features are available on page All Plants Category, which is displayed after choosing plant about which visitors want to read more. Here are also available links to other sources implemented by users. (I am not sure they will be working properly now)
 
- Here not
+### Returning Visitors
 
- ### Links
+Here not everythin was done yet.  I didn't add 
 
- This time links are only to other subpages. Social Media links wasent added, but in future will be implemented to create a fanpage on Facebook and Discord, where visitors will have an opportunity to share own expirences, meet together or create some online events as well. 
+### Links
 
- ### Responsive Design
+This time links are only to other subpages. Social Media links wasent added, but in future will be implemented to create a fanpage on Facebook and Discord, where visitors will have an opportunity to share own expirences, meet together or create some online events as well. 
 
- ### Validators
+### Responsive Design
 
- ### Browser Compatitbility
+To check the app is responsive I used:
 
- ### Grammar and spelling
+- dev tools,
+- 
 
- ### Lighthouse
-
- # Deployment
+### Validators
  
- This project is stored on GitHub repository and hosted on Heroku.
+I walidated this app on :
+
+1. [HTML Validator]()
+2. [CSS Validator]()
+3. [JavaScript Validator]()
+4. [Python Validator]()
+I also used:
+
+- Mozzilla and Google Chrom Dev Tools and
+- LightHouse report to improve my app
+
+### Browser Compatitbility
+
+This app works fine on all browsers. I tested Plantarium on:
+
+- Google Chrom,
+- Mozzilla,
+- Opera,
+
+### Grammar and spelling
+
+Was made during design process and after finished job.
+
+### Lighthouse
+
+My first report showed me this results (that was during my design process) 
+
+--------------------------------------------------------------------
+Criterion          |  Results 1   |   Results 2  |    Improved y/n
+--------------------------------------------------------------------
+Performance        |     63
+-------------------------------------------------------------------- 
+Accessibility      |     73
+--------------------------------------------------------------------
+Performance        |     87 
+--------------------------------------------------------------------
+SEO                |     92
+--------------------------------------------------------------------
+
+# Deployment
  
- ## Github
+This project is stored on GitHub repository and hosted on Heroku.
+ 
+## Github
 
- To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
-    1. Log into GitHub.
-    2. From the list of repositories on the screen, select madatoo/ms2-sligo
-    3. From the menu items near the top of the page, select Settings.
-    4. Scroll down to the GitHub Pages section.
-    5. Under Source click the drop-down menu labelled None and select Master Branch
-    6. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
-    7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+1. Log into GitHub.
+2. From the list of repositories on the screen, select madatoo/ms2-sligo
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down menu labelled None and select Master Branch
+6. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 
-    Run this project locally (clone this project into Gitpod) you will need:
+Run this project locally (clone this project into Gitpod) you will need:
 
-    - a Github account. Create a Github account here
-    - use the browser with extention for gitpod Then follow these steps:
+- a Github account. Create a Github account here
+- use the browser with extention for gitpod Then follow these steps:
 
-    1. Install the Gitpod Browser Extentions for your browser
-    2. After installation, restart the browser
-    3. Log into Gitpod with your gitpod account.
-    4. Navigate to the Project GitHub repository
-    5. Click the green "Gitpod" button in the top right corner of the respository
-    6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+1. Install the Gitpod Browser Extentions for your browser
+2. After installation, restart the browser
+3. Log into Gitpod with your gitpod account.
+4. Navigate to the Project GitHub repository
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
 
- ## Heroku
+## Heroku
 
-    1.
+1. Create a new application using the Heroku dashboard.
+2. Go to settings tab, and then click on "reval config vars" and add:
+- IP (0.0.0.0), 
+- PORT (5000),
+- MongoDB Name,
+- MongoDB URI (URL with DB name and password)
+3. Install Heroku via the console log using "npm install -g Heroku"
+4. Log into Heroku via console using "heroku login" and follow on the screen instructions to log in. 
+5. Create a requirements.txt file using the " pip3 freeze > requirements.txt " command.
+6. Create a Procfile (remember it do not have any extentions) use the " echo web: python app.py > Procfile " command.
+7. Push your code into Github repository
+8. Connect GitHub to Heroku to do that go to Heroku page in Deply tab go to "App connected to GitHub" type your user name in Github and the repository name (which you want to connect with Heroku)
+9. In Deploy Tab go to Automatic deploys section and click "Enable Automatic Deploys"
+10. to see deployed app click "'Open App" on the top of the page
+11. in Setting tab in Domains section will be link to your app.
 
- # Credits
+### Run project on GitPod 
+1. Select the Repository from the GitHub Dashboard
+2. Click the green button labelled 'GitPod'
+3. Install the necessary libraries specified in the requirements.txt
+4. Set your environment variables by creating and adding them into a env.py file as showed below:
 
- To prepare this project I took an ispirations from my own previous projects to create a READMEmd file. 
+os.environ.setdefault("SECRET_KEY", <SECRET_KEY>) 
+os.environ.setdefault("MONGO_URI", "mongodb+srv://marusroot:<PASWORD>@myfirstcluster.qk09g.mongodb.net/plantarium?retryWrites=true&w=majority") )
+os.environ.setdefault("MONGO_DBNAME", <DB Name>)
 
- ## Content 
+Remember to replace the content inside <>  
 
- To prepare valuable content I was using my own knowledge, experience, and  materials which are available on this websites:
+5. Create a .gitignore file in the root directory and add the env.py file to avoid it being pushed to GitHub
+6. Import the env.py file into the app.py file.
+7. Runn the application.
+
+# Credits
+
+To prepare this project I took an ispirations from my own previous projects to create a READMEmd file. 
+
+## Content 
+
+To prepare valuable content I was using my own knowledge, experience, and  materials which are available on this websites:
  - [The Royal Horticultural Society](https://www.rhs.org.uk)
  - [Wikipedia](https://en.wikipedia.org)
  - [The Old Farmer's Almanac](https://www.almanac.com/)
@@ -190,18 +258,25 @@ The most important thing in this project was design the application which meet w
 
 In this project I used the free images available on [unsplash](https://unsplash.com)
 
-The authors are:
+The images authors are:
 
- - Alexander Schimmeck
- - Waldemar Brandt
- - Zoe Schaeffer
- - Darren Nunis
- - Nicolette Meade
+- Alexander Schimmeck
+- Waldemar Brandt
+- Zoe Schaeffer
+- Darren Nunis
+- Nicolette Meade
 
- # Acknowledgements
+# Acknowledgements
 
+I would lkke to thank you:
+
+- my mentor Brian Maharia, for his tips and clarification about that what I need to include in this project,
+- Tutor Support Team for advise how to solve some from my issue, which I had in this ptoject
+- Student Care for support during whole course,
+- Students in Code Institute on Slack channels, which gaved me support and some advices as well
+- #women-in-tech Hackathon new freands from team-8 for opportunity to working in the same time with our project as well
+- and finally to my family, which is the most important for me :)  
  
+# Disclaimer
 
- # Disclaimer
-
- The content of this page is for educational purposes only.
+The content of this page is for educational purposes only.

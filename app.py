@@ -27,21 +27,10 @@ def index():
 
 
 """
-Add img to database
-
-
-
-@app.route("/")
-@app.route("/add_img")
-
-
-
-
 This is route for add plant page with form
 """
 
 
-@app.route("/")
 @app.route("/add_plant", methods=["GET", "POST"])
 def add_plant():
     if request.method == "POST":
@@ -84,4 +73,4 @@ def all_plants():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
