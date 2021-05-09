@@ -8,7 +8,7 @@
     </div>
     <!--add plant form-->
     <div class="row">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('add_plant') }}">
             <!--category_name-->
             <div class="row">
                 <select id="category_name" class="validate" name="category_name" required>
@@ -22,7 +22,11 @@
             </div>
             <!--plant_img-->
             <div class="row">
-                
+                <div class="input-field col s12">
+                    <label for="plant_img">Plant Image</label>
+                    <input class="validate" id="plant_img" name="plant_img" type="url" pattern="https://.*" required >
+                </div>
+                <span class="helper-text" data-error="Please enter correct name." data-success="Correct Name.">Please enter valid link to plant image.</span> 
             </div>
             <!--plant_name-->
             <div class="row">
