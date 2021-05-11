@@ -42,7 +42,7 @@ def add_plant():
             "plant_img": request.form.get("plant_img"),
             "plant_on_wish_list": wish_list,
             "plant_description": request.form.get("plant_description"),
-            "plant_place": request.form.get("plant_place"),
+            "plant_place": request.form.getlist("plant_place"),
             "plant_tips": request.form.get("plant_tips"),
             "plant_more_info": request.form.get("plant_more_info"),
             "plant_notes": request.form.getlist("plant_notes")
