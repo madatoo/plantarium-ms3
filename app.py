@@ -67,7 +67,8 @@ route for all plants serching page
 def all_plants():
     places = mongo.db.places.find().sort("plant_places", 1)
     all_plants = list(mongo.db.plants.find())
-    return render_template("all_plants.html", all_plants=all_plants, places=places)
+    return render_template(
+        "all_plants.html", all_plants=all_plants, places=places)
 
 
 if __name__ == "__main__":

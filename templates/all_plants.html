@@ -6,10 +6,8 @@
     <div class="row s12 m7 text-center custom-all-plants-header">
         <h1>Here you can browse our databse and read about some plants.</h1>
     </div>
-</div>
-<div class="container">
     <div class="row">
-        <form class="col s12" method="POST" action="{{ url_for('all_plants') }}">
+        <form class="col s12" method="POST" action="{{ url_for('plants') }}">
             <select id="plant_place" class="validate" name="plant_place" required>
                 <option value="" disabled selected>Choose from our four plant places.</option>
                 {% for place in places %}
@@ -36,7 +34,7 @@
                     <img src="/static/img/african_daisy_k_mackinnon_unsplash.png" alt="African daisy K.Mackinnon Unsplash">
                 </div>
                 <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Flowers</span></a>
+                    <a href="#"><span class="green-text">Flowers Browse</span></a>
                 </div>
             </div>
         </div>
