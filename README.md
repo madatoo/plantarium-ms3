@@ -17,16 +17,16 @@ This was probably the hardest part of my project. To make this project useful fo
 I assumed that this person would:
 
  - love gardening,
- - live in their own or rented house with a small garden or a few plant pots on the balcony.
- - be between 20 - 50 years old
- - have a small or intermediate experience in gardening
+ - live in their own or rented house with a small garden or have a few plant pots on the balcony.
+ - be between 20-50 years old
+ - have little to intermediate experience in gardening
  - want to read a little about plants before they decide to buy them
  - would like to take care of the plants in a natural way (without chemical fertilisers)
 
 ## First time Visitor's needs:
 
 - they would like to know what the page is about, this means that the main topic is described clearly 
-- easy and intuitive navigate through out the webpage (divided into proper sections)
+- easy and intuitive navigation throughout the webpage (divided into proper sections)
 - to find plant descriptions, their needs, photos and some advice on how to take care of them
 - know where to find important information for them (FAQ and navigation bar)
 - how to create own account to save items, which they found interesting 
@@ -37,7 +37,7 @@ I assumed that this person would:
 - reading more interesting descriptions of plants
 - creating their own plant book
 - sharing saved descriptions and pictures with others users
-- adding their own advices about taking care of the plants
+- adding their own advice about taking care of the plants
 - adding pictures and descriptions of plants they alredy have
 - adding pictures and descriptions of plants they would like to have in the future
 - sorting the plants by type (flowes/shrubs etc.)
@@ -51,14 +51,14 @@ I assumed that this person would:
 
 ## Color Scheme
 
-The webpage have white background color, the pages and plants hedings on the page have darkgreen color to correspond nicely with the white background, whole paragraphs are written in black color to give a good contrast and give people a chance to read content easily. The navigation bar, footer and buttons on the page have a the same darkgreen background color to keep consistently design White text is added to incerease the users experience. 
+The webpage has a white background and the pages and plants headings on the page have dark green color, so that they correspond nicely with the white background. All paragraphs are written in black to give a good contrast and give people a chance to read content easily. The navigation bar, footer and buttons on the page have the same dark green background to keep consistent design. White text is added to incerease the users experience. 
 
 
 ## Typography
 
 ## Imagery
 
-Imagery is very important for this page, and is used throughout, the website so that it's visually appealing. It helps visitors to remember flowers and easly identify them.
+Imagery is very important for this page, and is used throughout the website, so that it's visually appealing. It helps visitors remember flowers and easily identify them.
 
 ## Wireframes
 
@@ -72,24 +72,24 @@ Imagery is very important for this page, and is used throughout, the website so 
 
 ## Home page
 
-This page provide basic information about main purpose of this page and about that, who it aimed at.
+This page provides basic information about the main purpose of this page and about, who it's aimed at.
 
 ## Plants page
 
-Here are all plants added to plantarium database. To browse them you need choose one from available options and then selected category will be displayed on as the result. 
+Here are all plants added to plantarium database. To browse them you need to choose one from available options and then select the category that will be displayed as the result. 
 
 ## Add plant page
 
-That is probably most important page in whole project. Here you can add to plantarium database your plants. That part was for me most frustraiting and challenging. Especially part with plant pictures, plant type and plant place. I needed understand it very well to implement needet features.
+That is probably the most important page in the whole project. Here you can add to plantarium database your plants. That part was the most frustraiting and challenging for me. Especially the part with plant pictures, plant type and plant place. I needed to understand it very well to implement needed features.
 
 ### CRUD 
 
-The most important thing in this project was design the application which meet whole CRUD criterias. 
+The most important thing in this project was designing the application which meets all CRUD criterias. 
 
-1. Create - it was achived by creating a Add Yoyr plant page with form to add plant to a database.
-2. Read - to implement this part All Plants page was created to allow visitors make a choose beetween available categories which will displayed when s/he decide which want to browse.
-3. Update - from All Plants page visitors can go and read more about specific plant and edit all informations about plant.
-4. Delete - simlar, like descripted above, visitors can remove data about specific plant using All Plants page.
+1. Create - it was achived by creating an Add Your Plant page with a form to add a plant to the database.
+2. Read - to implement this part All Plants page was created to allow visitors make a choice beetween the available categories which will display when they decide which one they want to browse.
+3. Update - from All Plants page visitors can go and read more about a specific plant and edit all information about the plant.
+4. Delete - simlarly to what's above, visitors can remove data about a specific plant using All Plants page.
 
 
 # Technologies Used
@@ -114,39 +114,38 @@ The most important thing in this project was design the application which meet w
 
 ### First Time Visitor Goals
 
-In this project FAQ wasen't implemented yet, but some informations about page functionallity were implemented. 
+In this project FAQ wasn't implemented yet, but some information about page functionallity was implemented. 
 
 - main purpose of the webpage is described on the Home page below the carusel,
-- how to add plant - each field in Add Plant form is described or intuitive (such us  switcher add to list wish field or plant place - you need only click on the correct place which have added icon, to help you decide about the correct place).
+- how to add plants - each field in Add Plant form is described or intuitive.
 - how to browse plants - that is posibble on All Plants page. Here visitors can browse plants afrter choosing some categoty. 
-
-- edit and delete  - this features are available on page All Plants Category, which is displayed after choosing plant about which visitors want to read more. Here are also available links to other sources implemented by users. (I am not sure they will be working properly now)
+- edit and delete - those features are available on the All Plants Category page, which is displayed after choosing the plant about which visitors want to read more. Here are also available links to other sources implemented by users. (I am not sure if they will be working properly now)
 
 ### Returning Visitors
 
-Here not everythin was done yet.  I didn't add 
+Not everything was done here yet.  I didn't add 
 
 ### Known bugs
 
-I wanted create an app which will allows users add some info about favourite plants to databese. Unfortunatly not everything is going just like I intendent. 
+I wanted to create an app which will allow users to add some info about their favourite plants to the database. Unfortunately not everything is going just like I intended. 
 
-First at all, my add plant form has a bug in filed choose category (it is a dropdown field with all categories which are  available in created database and saved in categories collection). Here Validation rule not working fine, the red color is not appered when the category is not selected. I tryied to solve it by adding the snippet of code from Tim Nelson materials which was showed in school project, but my skills wasent large, to fix it now. 
+First of all, my Add Plant form has a bug in the place to choose the category (it is a dropdown field with all categories that are available in the created database and saved in the categories collection). Here Validation rule is not working well, the red color does not appear when the category is not selected. I tried to solve it by adding a snippet of code from Tim Nelson's material which was showed in the school project, but my skills are not good enough to fix it, yet. 
 
 
 ### Links
 
-This time links are only to other subpages. Social Media links wasent added, but in future will be implemented to create a fanpage on Facebook and Discord, where visitors will have an opportunity to share own expirences, meet together or create some online events as well. 
+This time links are only to other subpages. Social Media links weren't added, but in the future they will be implemented to create a fanpage on Facebook and Discord, where visitors will have an opportunity to share their own expirences, to meet together or to create some online events as well. 
 
 ### Responsive Design
 
-To check the app is responsive I used:
+To check if the app is responsive I used:
 
 - Dev Tools,
 - 
 
 ### Validators
  
-I walidated this app on :
+I validated this app on :
 
 1. [HTML Validator](https://validator.w3.org/)
 2. [CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -173,7 +172,7 @@ Was made during design process and after finished job.
 
 ### Lighthouse
 
-My first report showed me this results (that was during my design process) 
+My first report showed me these results (taken during my design process) 
 
 --------------------------------------------------------------------
 Criterion          |  Results 1   |   Results 2  |    Improved y/n
@@ -182,7 +181,7 @@ Performance        |     63
 -------------------------------------------------------------------- 
 Accessibility      |     73
 --------------------------------------------------------------------
-Performance        |     87 
+Best Practices     |     87 
 --------------------------------------------------------------------
 SEO                |     92
 --------------------------------------------------------------------
@@ -251,11 +250,11 @@ Remember to replace the content inside <>
 
 # Credits
 
-To prepare this project I took an ispirations from my own previous projects to create a READMEmd file. 
+To prepare this project I took an ispiration from my own previous projects to create a READMEmd file. 
 
 ## Content 
 
-To prepare valuable content I was using my own knowledge, experience, and  materials which are available on this websites:
+To prepare valuable content I was using my own knowledge, experience, and  materials which are available on these websites:
  - [The Royal Horticultural Society](https://www.rhs.org.uk)
  - [Wikipedia](https://en.wikipedia.org)
  - [The Old Farmer's Almanac](https://www.almanac.com/)
@@ -277,14 +276,14 @@ The images authors are:
 
 # Acknowledgements
 
-I would lkke to thank you:
+I would lkke to thank:
 
-- my mentor Brian Maharia, for his tips and clarification about that what I need to include in this project,
-- Tutor Support Team for advise how to solve some from my issue, which I had in this ptoject
-- Student Care for support during whole course,
-- Students in Code Institute on Slack channels, which gaved me support and some advices as well
-- #women-in-tech Hackathon new freands from team-8 for opportunity to working in the same time with our project as well
-- and finally to my family, which is the most important for me :)  
+- my mentor Brian Maharia, for his tips and clarification about what I need to include in this project,
+- Tutor Support Team for advising me how to solve some of my issues, which I had in this project
+- Student Care for support during the whole course,
+- Students in Code Institute on Slack channels, which gave me support and some advice as well
+- #women-in-tech Hackathon new friends from team-8 for the opportunity to work on our project at the same time
+- and finally my family, which is the most important for me :)  
  
 # Disclaimer
 
