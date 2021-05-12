@@ -60,26 +60,17 @@
             <!--plant_place sun/shade etc.-->
             <div class="row center">
                 <div class="row row s12 m7 text-center">
-                    <a class='dropdown-trigger btn waves-effect waves-light teal darken-4 plant-place-button' href='#' data-target="plant_place" name="plant_place">Plant Place</a>
+                    <select id="plant_place" class="validate" name="plant_place" required>
+                        <option value="" disabled selected>
+                            Choose Plant Place
+                        </option>
                         {% for place in places %}
-                            <ul id="plant_place" class='dropdown-content'>
-                                <li><a href="#!"><i class="far fa-sun"></i>Sun</a></li>
-                                <li class="divider" tabindex="-1"></li>
-                                <li>
-                                    <a href="#!"><i class="fas fa-sun"></i>Partial-Sun</a>
-                                </li>
-                                <li class="divider" tabindex="-1"></li>
-                                <li>
-                                    <a href="#!"><i class="fas fa-cloud-sun"></i>Partial-Shade</a>
-                                </li>
-                                <li class="divider" tabindex="-1"></li>
-                                <li> 
-                                    <a href="#!"><i class="fas fa-cloud"></i>Shade</a>
-                                </li>
-                            <ul>
-                        {% endfor %}                  
+                            <option value="{{ place.plant_place }}">
+                                {{ place.plant_place }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="plant_place">Plant Place</label>              
                 </div>
-            
             </div>
             <!--plant_tips-->
             <div class="row">
