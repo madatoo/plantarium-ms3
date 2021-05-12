@@ -7,7 +7,7 @@
         <h1>Here you can browse our databse and read about some plants.</h1>
     </div>
     <div class="row">
-        <form class="col s12" method="POST" action="{{ url_for('all_plants'),plant_id = plant_id }}">
+        <form class="col s12" method="POST" action="{{ url_for('all_plants'),plant_id = plant._id }}">
             <!--category selection-->
             <div class="row">
                 <div class="imput">
@@ -24,14 +24,15 @@
                     {% endfor %}
                 </select>
                     <label for="plant_place">Plant Category</label>
+                </div>
             </div>
-        </div>
             
         </form>
     </div>
 </div>
 <div class="containeer">
     <div class="row">
+
         <!--add serch fileld-->
     </div>
 </div>
