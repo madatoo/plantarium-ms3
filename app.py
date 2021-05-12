@@ -57,6 +57,9 @@ def add_plant():
         "add_plant.html", categories=categories, places=places)
 
 
+
+
+
 """
 route for all plants serching page
 """
@@ -74,4 +77,4 @@ def all_plants():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=False)
+            debug=True)

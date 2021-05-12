@@ -7,15 +7,26 @@
         <h1>Here you can browse our databse and read about some plants.</h1>
     </div>
     <div class="row">
-        <form class="col s12" method="POST" action="{{ url_for('plants') }}">
-            <select id="plant_place" class="validate" name="plant_place" required>
-                <option value="" disabled selected>Choose from our four plant places.</option>
-                {% for place in places %}
-                    <option value="{{ place.plant_place }}">
-                        {{ place.plant_place }}</option>
-                {% endfor %}
-            </select>
-            <label for="plant_place"></label>
+        <form class="col s12" method="POST" action="{{ url_for('all_plants'),plant_id = plant_id }}">
+            <!--category selection-->
+            <div class="row">
+                <div class="imput">
+                <select id="plant_place" class="validate" name="plant_place" required>
+                    <option value="" disabled>Choose from our four plant places.</option>
+                    {% for place in places %}
+                        {% if place.plant_place == plant.plant_place %}
+                            <option value="{{ place.plant_place }}" selected>
+                            {{ place.plant_place }}</option>
+                        {% else %}
+                        <option value="{{ place.plant_place }}">
+                            {{ place.plant_place }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                    <label for="plant_place">Plant Category</label>
+            </div>
+        </div>
+            
         </form>
     </div>
 </div>
