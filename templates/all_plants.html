@@ -29,17 +29,19 @@
     </div>
     <div class="row">
         <!--browse by category name-->
-        <div class="col s12 m4">
-            <div class="card teal small darken-4">
-                <div class="card-content white-text center">
-                    <span class="card-title center">Card Title</span>
-                </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+        {% for category in categories %}
+            <div class="col s12 m4">
+                <div class="card teal small darken-4 center-align">
+                    <div class="card-content white-text ">
+                        <span class="card-title">{{ category.category_name }}</span>
+                    </div>
+                    <div class="card-action">
+                    <a href="#">Browse</a>
+                    <a href="#">Edit</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        {% endfor %}
     </div>   
 </div>
 {% endblock %}
