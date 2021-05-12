@@ -14,8 +14,13 @@
                 <select id="category_name" class="validate" name="category_name" required>
                     <option value="" disabled selected>Choose Plant Category</option>
                     {% for category in categories %}
+                        {% if category.category_name == plant.plant_name %}
+                        <option value="{{ category.category_name }}" selected>
+                            {{ category.category_name }}</option>
+                        {% else %}
                         <option value="{{ category.category_name }}">
                             {{ category.category_name }}</option>
+                        {% endif %}
                     {% endfor %}
                 </select>
                 <label for="category_name">Plant Category</label>
