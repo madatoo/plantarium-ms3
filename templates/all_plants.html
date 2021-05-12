@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <form class="col s12 " method="POST" action="{{ url_for('all_plants') }}">
-            <!--plants by plant_place-->
+            <!-- browse plants by plant_place-->
             <div class="row">
                 <div class="row center">
                     <div class="row row s12 m7 text-center">
@@ -26,6 +26,20 @@
                 </div>
             </div>
         </form>
+    </div>
+    <div class="row">
+        <!--browse by category name-->
+        <div class="col s12 m4">
+            <div class="card teal small darken-4">
+                <div class="card-content white-text center">
+                    <span class="card-title center">Card Title</span>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
     </div>   
 </div>
 {% endblock %}
