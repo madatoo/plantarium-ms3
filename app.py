@@ -71,6 +71,21 @@ def add_plant():
         "add_plant.html", categories=categories, places=places)
 
 
+"""
+This route is for edit plant
+"""
+
+
+@app.route("/edit_plant/<plant_id>", methods=["GET", "POST"])
+def edit_plant(plant_id):
+    plant = mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    places = mongo.db.places.find().sort("plant_places", 1)
+    return render_template(
+        "edit_plant.html", categories=categories, plant=plant, places=places)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
