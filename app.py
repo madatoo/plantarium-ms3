@@ -22,8 +22,21 @@ add route for home page
 
 
 @app.route("/")
+@app.route("/index")
 def index():
     return render_template("index.html", page_title="Home")
+
+
+"""
+route to select and browse all plants in plantarium db
+"""
+
+
+@app.route("/all_plants", methods=["GET", "POST"])
+def all_plants():
+    plants = list(mongo.db.plants.find())
+    return render_template(
+        "all_plants.html", plants=plants)
 
 
 """
@@ -50,28 +63,11 @@ def add_plant():
 
         mongo.db.plants.insert_one(plant)
         flash("Plant Successfully Added.")
-        return redirect(url_for("all_plants"))
+        return redirect(url_for("index"))
     categories = mongo.db.categories.find().sort("category_name", 1)
     places = mongo.db.places.find().sort("plant_places", 1)
     return render_template(
         "add_plant.html", categories=categories, places=places)
-
-
-
-
-
-"""
-route for all plants serching page
-"""
-
-
-@app.route("/")
-@app.route("/all_plants")
-def all_plants():
-    places = mongo.db.places.find().sort("plant_places", 1)
-    all_plants = list(mongo.db.plants.find())
-    return render_template(
-        "all_plants.html", all_plants=all_plants, places=places)
 
 
 if __name__ == "__main__":

@@ -131,6 +131,8 @@ I wanted to create an app which will allow users to add some info about their fa
 
 First of all, my Add Plant form has a bug in the place to choose the category (it is a dropdown field with all categories that are available in the created database and saved in the categories collection). Here Validation rule is not working well, the red color does not appear when the category is not selected. I tried to solve it by adding a snippet of code from Tim Nelson's material which was showed in the school project, but my skills are not good enough to fix it, yet. 
 
+Secondly, in add_plant form  (in add plant page) plant_place field don't work properly. When user pick a place (sun/shadow etc) this should be saved in database. For now it is not working, and info is't saved.
+
 
 ### Links
 

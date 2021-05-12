@@ -7,8 +7,9 @@
         <h1>Here you can browse our databse and read about some plants.</h1>
     </div>
     <div class="row">
-        <form class="col s12" method="POST" action="{{ url_for('all_plants',plant_id = plant._id )}}">
+        <form class="col s12" method="POST" action="{{ url_for('all_plants',plant_id = plant_id )}}">
             <!--category selection-->
+            <!--plants by plant_place-->
             <div class="row">
                 <div class="imput">
                 <select id="plant_place" class="validate" name="plant_place" required>
@@ -26,85 +27,7 @@
                     <label for="plant_place">Plant Category</label>
                 </div>
             </div>
-            
         </form>
     </div>
-</div>
-<div class="containeer">
-    <div class="row">
-
-        <!--add serch fileld-->
-    </div>
-</div>
-</div>
-<div class="container">  
-    <div class="row ">
-        <!--Flowers-->
-        <div class="col s12 m6 l4">
-            <div class="card small ">
-                <div class="card-image">
-                    <img src="/static/img/african_daisy_k_mackinnon_unsplash.png" alt="African daisy K.Mackinnon Unsplash">
-                </div>
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Flowers Browse</span></a>
-                </div>
-            </div>
-        </div>
-        <!--Herbs-->
-        <div class="col s12 m6 l4">
-            <div class="card small">
-                <div class="card-image">
-                    <img src="/static/img/dill-s-sundar-cs-unsplash.png" alt="Dill S.Sundar CS Unsplash">
-                </div>
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Herbs</span></a>
-                </div>
-            </div>
-        </div>
-        <!--Fruits-->
-        <div class="col s12 m6 l4">
-            <div class="card small">
-                <div class="card-image">
-                    <img src="/static/img/strawberries-j-tang-unsplash.png" alt="Strawberries J.Tang Unsplash">
-                </div>
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Fruits</span></a>
-                </div>
-            </div>
-        </div>
-        <!--Shrubs-->
-        <div class="col s12 m6 l4">
-            <div class="card small">
-                <div class="card-image">
-                    <img src="/static/img/boxwood-c-bisbo-johnsen-unsplash.png" alt="Boxwood C. Bisbo Johnsen Unsplash">
-                </div>
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Shrubs</span></a>
-                </div>
-            </div>
-        </div>
-        <!--Climbers-->
-        <div class="col s12 m6 l4">
-            <div class="card small">
-                <div class="card-image">
-                    <img src="/static/img/clematis-j-ronberg-unsplash.png" alt="Clematis J. Ronberg Unsplash">
-                </div> 
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Climbers</span></a>
-                </div>
-            </div>
-        </div>
-        <!--Trees-->
-        <div class="col s12 m6 l4">
-            <div class="card small">
-                <div class="card-image">
-                    <img src="/static/img/magnolia-f-fistarol-unsplash.png" alt="Magnolia F. Fistarol Unsplash">
-                </div>
-                <div class="card-action center-align card-title">
-                    <a href="#"><span class="green-text">Trees</span></a>
-                </div>
-            </div>
-        </div>
-    </div>   
 </div>
 {% endblock %}
