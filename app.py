@@ -103,6 +103,18 @@ def edit_plant(plant_id):
         "edit_plant.html", categories=categories, plant=plant, places=places)
 
 
+"""
+This is route to delete a single plant from database
+"""
+
+
+@app.route("/delete_plant/<plant_id>")
+def delete_plant(plant_id):
+    mongo.db.plant.remove({"_id": ObjectId(plant_id)})
+    flash("Plant Successfully Removed.")
+    return redirect(url_for("index"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

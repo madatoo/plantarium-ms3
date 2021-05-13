@@ -96,7 +96,7 @@
             <!--submit/return/delete btn-->
             <div class="row center">
                 <a class="btn waves-effect waves-light space teal darken-4" href="{{ url_for('edit_plant', plant_id=plant._id) }}">Edit <i class="fas fa-paper-plane"></i></a>
-                <!--delete plant will be here-->
+                <a class="btn waves-effect waves-light space teal pink lighten-1" href="{{ url_for('delete_plant', plant_id=plant._id) }}">Delete <i class="fas fa-eraser"></i></a>
                 <a class="btn waves-effect waves-light space teal darken-4" href="{{ url_for('index') }}">Return <i class="fas fa-home"></i></a>
             </div>
             
