@@ -28,20 +28,17 @@ I assumed that this person would:
 - they would like to know what the page is about, this means that the main topic is described clearly 
 - easy and intuitive navigation throughout the webpage (divided into proper sections)
 - to find plant descriptions, their needs, photos and some advice on how to take care of them
-- know where to find important information for them (FAQ and navigation bar)
-- how to create own account to save items, which they found interesting 
+- know where to find important information for them (navigation bar) 
 
 
 ## Returning visitors are very often interested in:
 
 - reading more interesting descriptions of plants
-- creating their own plant book
 - sharing saved descriptions and pictures with others users
 - adding their own advice about taking care of the plants
 - adding pictures and descriptions of plants they alredy have
 - adding pictures and descriptions of plants they would like to have in the future
-- sorting the plants by type (flowes/shrubs etc.)
-- sorting plants by the options "I have the plant" or "I want the plant"
+- sorting the plants by place (Sun/Shade etc.)
 - editing saved plants
 - adding pictures from own gardens to inspire others  
 
@@ -62,11 +59,11 @@ Imagery is very important for this page, and is used throughout the website, so 
 
 ## Wireframes
 
-- [Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
+- ![Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.pdf)
 
-- [Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
+- ![Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.pdf)
 
-- [Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
+- ![Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.pdf)
 
 # Features
 
@@ -96,10 +93,10 @@ The most important thing in this project was designing the application which mee
 
 - HTML5 - used for building the website
 - CSS3 - for styling elements
-- JavaScript.
-- Python
-- MongoDB
-- Flask
+- JavaScript to improve users experience
+- Python used as a “scripting language” for web applications
+- MongoDB to store created data inside plantarium database
+- Flask for developing web application 
 - JQuery - to initialize Materialize CSS components.
 - Google Fonts -  used for fonts on website
 - Font Awesome - used for Icons.
@@ -123,15 +120,17 @@ In this project FAQ wasn't implemented yet, but some information about page func
 
 ### Returning Visitors
 
-Not everything was done here yet.  I didn't add 
+Most of teir needs is implemented, but not all. I didn't add an login and register function in this project (that will be done in future). This decision, bring me a lot od problems :). And didn't allow to create own (user) database. For now, this app allows each users add /edit and delate  each plant in this database -  and that is, because I did't created an admin or super-user. 
 
-### Known bugs
+### Known bugs add challanges 
 
 I wanted to create an app which will allow users to add some info about their favourite plants to the database. Unfortunately not everything is going just like I intended. 
 
 First of all, my Add Plant form has a bug in the place to choose the category (it is a dropdown field with all categories that are available in the created database and saved in the categories collection). Here Validation rule is not working well, the red color does not appear when the category is not selected. I tried to solve it by adding a snippet of code from Tim Nelson's material which was showed in the school project, but my skills are not good enough to fix it, yet. 
 
-Secondly, in add_plant form  (in add plant page) plant_place field don't work properly. When user pick a place (sun/shadow etc) this should be saved in database. For now it is not working, and info is't saved.
+The one from my biggest challanges in this project was understanding how the database works, and where I should write some conditions, to edit/display or delete some data.  
+
+I had a lots troubles with adding images into database. To solve this issue I wanted : create an route to store my images to that I was whached an tutorials from Pretty Printed, then save them directly in project (pictures for carousel and categories), I also added images to the imgbb.com, where I created an album, and in github in different repositarium (lavener-iguana). Finally I addded the pictures using url for github repo.
 
 
 ### Links
@@ -143,7 +142,7 @@ This time links are only to other subpages. Social Media links weren't added, bu
 To check if the app is responsive I used:
 
 - Dev Tools,
-- 
+- Am I responsive page
 
 ### Validators
  
@@ -179,14 +178,15 @@ My first report showed me these results (taken during my design process)
 --------------------------------------------------------------------
 Criterion          |  Results 1   |   Results 2  |    Improved y/n
 -------------------------------------------------------------------
-Performance        |     63
+Performance        |     63       |  98
 -------------------------------------------------------------------- 
-Accessibility      |     73
+Accessibility      |     73       | 91
 --------------------------------------------------------------------
-Best Practices     |     87 
+Best Practices     |     87       | 87
 --------------------------------------------------------------------
-SEO                |     92
+SEO                |     92       | 100
 --------------------------------------------------------------------
+
 
 # Deployment
  
@@ -253,6 +253,7 @@ Remember to replace the content inside <>
 # Credits
 
 To prepare this project I took an ispiration from my own previous projects to create a READMEmd file. 
+I also was watched project  from March Hackhaton (Happy Paddy Go, where I was one from contributors), to look how use Materialize. I needed also some idea how to create this app, and I watched some projects created by others students. Some solutions, I transform to my own idea. 
 
 ## Content 
 

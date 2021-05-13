@@ -1,7 +1,7 @@
 import os
 from flask import (
     Flask, flash, render_template,
-    redirect, request, session, url_for)
+    redirect, request, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
@@ -78,6 +78,23 @@ This route is for edit plant
 
 @app.route("/edit_plant/<plant_id>", methods=["GET", "POST"])
 def edit_plant(plant_id):
+    if request.method == "POST":
+        wish_list = "on" if request.form.get(
+            "plant_on_wish_list") else "no"
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "plant_name": request.form.get("plant_name"),
+            "plant_img": request.form.get("plant_img"),
+            "plant_on_wish_list": wish_list,
+            "plant_description": request.form.get("plant_description"),
+            "plant_place": request.form.getlist("plant_place"),
+            "plant_tips": request.form.get("plant_tips"),
+            "plant_more_info": request.form.get("plant_more_info"),
+            "plant_notes": request.form.getlist("plant_notes")
+        }
+
+        mongo.db.plants.update({"_id": ObjectId(plant_id)}, submit)
+        flash("Plant Successfully Updated.")
     plant = mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
 
     categories = mongo.db.categories.find().sort("category_name", 1)
