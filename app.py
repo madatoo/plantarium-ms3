@@ -40,6 +40,14 @@ def all_plants():
         "all_plants.html", categories=categories, places=places)
 
 
+@app.route("/browse_plants/<plant_place>")
+def browse_plantns(plant_place):
+
+    categories = mongo.db.categories.find()
+    places = mongo.db.places.find()
+    return render_template("browse.html", categories=categories, places=places)
+
+
 """
 This is route for add plant page with form
 """
@@ -118,4 +126,4 @@ def delete_plant(plant_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
