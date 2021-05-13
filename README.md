@@ -124,13 +124,13 @@ Most of teir needs is implemented, but not all. I didn't add an login and regist
 
 ### Known bugs add challanges 
 
-I wanted to create an app which will allow users to add some info about their favourite plants to the database. Unfortunately not everything is going just like I intended. 
+I wanted to create an app that will allow users to add some info about their favourite plants to the database. Unfortunately not everything is going just like I intended. 
 
-First of all, my Add Plant form has a bug in the place to choose the category (it is a dropdown field with all categories that are available in the created database and saved in the categories collection). Here Validation rule is not working well, the red color does not appear when the category is not selected. I tried to solve it by adding a snippet of code from Tim Nelson's material which was showed in the school project, but my skills are not good enough to fix it, yet. 
+First of all, my Add Plant form has a bug in the place to choose the category (it is a dropdown field with all categories that are available in the created database and saved in the categories collection). Here Validation rule is not working well, the red color does not appear when the category is not selected. I tried to solve it by adding a snippet of a code from Tim Nelson's material which was showed in the school project, but my skills are not good enough to fix it, yet. 
 
-The one from my biggest challanges in this project was understanding how the database works, and where I should write some conditions, to edit/display or delete some data.  
+One of my biggest challenges in this project was understanding how the database works, and where I should write some conditions, to edit/display or delete some data.  
 
-I had a lots troubles with adding images into database. To solve this issue I wanted : create an route to store my images to that I was whached an tutorials from Pretty Printed, then save them directly in project (pictures for carousel and categories), I also added images to the imgbb.com, where I created an album, and in github in different repositarium (lavener-iguana). Finally I addded the pictures using url for github repo.
+I had a lot of trouble with adding images into the database. To solve this issue I wanted to create an route to store my images (to do that I watched tutorials from Pretty Printed), then save them directly in the project (pictures for carousel and categories). I, also, added images to the imgbb.com, where I created an album, and in github in different repositarium (lavener-iguana). Finally I addded the pictures using url for github repo.
 
 
 ### Links
