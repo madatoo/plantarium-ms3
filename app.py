@@ -40,12 +40,30 @@ def all_plants():
         "all_plants.html", categories=categories, places=places)
 
 
-@app.route("/browse_plants/<plant_place>")
-def browse_plantns(plant_place):
-
+"""
+route to browse plants by plant_place category
+"""
+""
+@app.route("/browse_place/<plant_place>")
+def browse_place(plant_place):
     categories = mongo.db.categories.find()
+    places = mongo.db.places.find().sort("plant_places", 1)
+    return render_template(
+        "browse_place.html", categories=categories, places=places)
+
+
+
+"""
+route for browse plant by plant_id
+"""
+
+
+@app.route("/browse_plants/<plant_id>")
+def browse_plantns(plant_id):
+
+    categories = mongo.db.categories.find_one()
     places = mongo.db.places.find()
-    return render_template("browse.html", categories=categories, places=places)
+    return render_template("browse_plants.html", categories=categories, places=places)
 
 
 """
