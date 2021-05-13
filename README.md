@@ -2,9 +2,9 @@
 
 # Plantarium
 
-To visit the live website, click here (add link to the live website).
+To visit the live website, click [here]( https://plantarium-magda.herokuapp.com)
 
-insert picture from  (is my website responsive)
+![my page](https://madatoo.github.io/planterium-ms3/static/img/responsive_plantarium.pdf)
 
 # Introduction
 
@@ -59,11 +59,11 @@ Imagery is very important for this page, and is used throughout the website, so 
 
 ## Wireframes
 
-- ![Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.pdf)
+- [Mobile view ](https://madatoo.github.io/plantarium-ms3/static/wireframes/mobile_plantarium.docx)
 
-- ![Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.pdf)
+- [Tablet view](https://madatoo.github.io/plantarium-ms3/static/wireframes/tablet_plantarium.docx)
 
-- ![Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.pdf)
+- [Desctop view](https://madatoo.github.io/plantarium-ms3/static/wireframes/desktop_plantarium.docx)
 
 # Features
 
@@ -252,8 +252,7 @@ Remember to replace the content inside <>
 
 # Credits
 
-To prepare this project I took an ispiration from my own previous projects to create a READMEmd file. 
-I also was watched project  from March Hackhaton (Happy Paddy Go, where I was one from contributors), to look how use Materialize. I needed also some idea how to create this app, and I watched some projects created by others students. Some solutions, I transform to my own idea. 
+    To prepare this project I took inspiration from my own previous projects to create a READMEmd file. I also watched a project  from the March Hackathon (Happy Paddy Go, where I was one of the contributors), to look at how to use Materialize. I also needed some ideas on how to create this app, and I watched some projects created by other students. Some solutions, I transform to my own idea.To prepare this project was used customised Code Institute materials from the mini project - Task Manager.To solve some challenges  I looked at some advice on stack overflow, CSS-Tricks, maketecheasier.com, veb.dev page,Slack, Lighthouse report and yt, Materialize and MongoDB docs. 
 
 ## Content 
 
@@ -271,11 +270,13 @@ In this project I used the free images available on [unsplash](https://unsplash.
 
 The images authors are:
 
-- Alexander Schimmeck
-- Waldemar Brandt
-- Zoe Schaeffer
-- Darren Nunis
-- Nicolette Meade
+- Alexander Schimmeck,
+- Waldemar Brandt,
+- Zoe Schaeffer,
+- Darren Nunis,
+- Nicolette Meade,
+
+if someone isn't mention here - in file name is the surname and source.
 
 # Acknowledgements
 
