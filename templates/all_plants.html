@@ -10,6 +10,7 @@
         <form class="col s12 " method="POST" action="{{ url_for('all_plants') }}">
             <!-- browse plants by plant_place-->
             <div class="row">
+                {% for plant in plants %}
                 <div class="row center">
                     <div class="row row s12 m7 text-center">
                         <select id="plant_place" class="validate" name="plant_place" required>
@@ -23,6 +24,7 @@
                         </select>
                         <label for="plant_place">Plant Place</label>              
                     </div>
+                {% endfor %}
                 </div>
             </div>
         </form>

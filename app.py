@@ -34,10 +34,11 @@ route to select and browse all plants in plantarium db
 
 @app.route("/all_plants")
 def all_plants():
+    plants = mongo.db.plants.find()
     categories = mongo.db.categories.find().sort("category_name", 1)
     places = mongo.db.places.find().sort("plant_places", 1)
     return render_template(
-        "all_plants.html", categories=categories, places=places)
+        "all_plants.html", categories=categories, places=places, plants=plants)
 
 
 """
@@ -84,7 +85,6 @@ def add_plant():
             "plant_description": request.form.get("plant_description"),
             "plant_place": request.form.getlist("plant_place"),
             "plant_tips": request.form.get("plant_tips"),
-            "plant_more_info": request.form.get("plant_more_info"),
             "plant_notes": request.form.getlist("plant_notes")
         }
 
